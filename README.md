@@ -1,66 +1,63 @@
-## Foundry
+Sure! Below is a revised `README.md` file tailored for a project built using Foundry.
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+# Governor Contract Project
 
-Foundry consists of:
+This project implements a decentralized governance system using a Governor contract and a governance token (GovToken). It allows stakeholders to propose and vote on changes to a company's tagline.
 
--   **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
--   **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
--   **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
--   **Chisel**: Fast, utilitarian, and verbose solidity REPL.
+## Table of Contents
 
-## Documentation
+- [Introduction](#introduction)
+- [Features](#features)
+- [Requirements](#requirements)
+- [Setup](#setup)
+- [Testing](#testing)
 
-https://book.getfoundry.sh/
+## Introduction
 
-## Usage
+The Governor Contract Project aims to provide a robust and secure governance system where stakeholders can participate in decision-making processes. This project includes smart contracts for proposing, voting, and executing changes based on the governance token (GovToken).
 
-### Build
+## Features
 
-```shell
-$ forge build
-```
+- Propose new changes to the company's tagline.
+- Cast votes with reasons.
+- Ensure proposals meet quorum and voting thresholds.
+- Transition through different proposal states: Pending, Active, Succeeded, etc.
 
-### Test
+## Requirements
 
-```shell
-$ forge test
-```
+- [Foundry](https://github.com/foundry-rs/foundry)
 
-### Format
+## Setup
 
-```shell
-$ forge fmt
-```
+1. **Clone the repository:**
 
-### Gas Snapshots
+   ```sh
+   git clone https://github.com/PrateekSavanur/Foundry-DAO.git
+   cd Foundry-DAO
+   ```
 
-```shell
-$ forge snapshot
-```
+2. **Install Foundry:**
 
-### Anvil
+   ```sh
+   curl -L https://foundry.paradigm.xyz | bash
+   foundryup
+   ```
 
-```shell
-$ anvil
-```
+3. **Build the project:**
 
-### Deploy
+   ```sh
+   forge build
+   ```
 
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
+4. **Run tests:**
+   ```sh
+   forge test
+   ```
 
-### Cast
+````
+## Testing
 
-```shell
-$ cast <subcommand>
-```
-
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```
+To run the test suite, use the following command:
+```sh
+forge test
+````
