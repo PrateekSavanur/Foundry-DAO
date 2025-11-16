@@ -1,5 +1,3 @@
-Sure! Below is a revised `README.md` file tailored for a project built using Foundry.
-
 # Governor Contract Project
 
 This project implements a decentralized governance system using a Governor contract and a governance token (GovToken). It allows stakeholders to propose and vote on changes to a company's tagline.
